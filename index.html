@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+    <header class="container-navbar">
+        <h1>MORENT</h1>
+        <div class="search-container">
+            <img src="images/navbar/search-normal.png" alt="Left" class="left-icon">
+            <input type="text" placeholder="Search something here">
+            <img src="images/navbar/filter.png" alt="Right" class="right-icon"> 
+        </div>
+        <div class="nav-icons">
+            <img src="images/navbar/Like.png" alt="heart">
+            <img src="images/navbar/Notification.png" alt="notification">
+            <img src="images/navbar/Settings.png" alt="setting">
+            <img src="images/navbar/Profil.png" alt="Profil">
+        </div>
+    </header>
+
+    <main class="container-main">
+        <section class="aside">
+            <form class="container-aside">
+                <h4>TYPE</h4>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    Sport <samp>(10)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    SUV <samp>(12)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    MPV <samp>(16)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    Sedan <samp>(20)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    Coupe <samp>(14)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    Hatchback <samp>(14)</samp>
+                </label>
+            </form>
+        
+            <form class="container-aside">
+                <h4>CAPACITY</h4>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    2Person <samp>(10)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    4Person<samp>(14)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    6Person <samp>(12)</samp>
+                </label>
+                <label class="rounded-label">
+                    <input type="checkbox" name="" value="">
+                    8orMore <samp>(16)</samp>
+                </label>
+            </form>
+        
+            <form class="container-aside">
+                <h4>PRICE</h4>
+                <input type="range" min="0" max="100" value="50" class="slider">
+            </form>
+        </section>  
+
+        <div id="main">
+            <div >
+                <div class="container-options">
+                    <img src="images/Switch.png" alt="">
+                    <div class="selections">
+                        <div class="option">
+                            <div class="radio-style">
+                                <label for="">
+                                    <input class="radio-input" type="radio" name="pickup" value="">
+                                    Pick-Up
+                                </label>
+                            </div>
+                            <div class="selection-container">
+                                <div class="select">
+                                    <label for="city">Locations</label>
+                                        <div class="custom-select">
+                                            <select id="city">
+                                                <option value="" disabled selected>Select your city</option>
+                                                <option value="">City</option>
+                                                <option value="">City</option>
+                                                <option value="">City</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="select">
+                                    <label for="date">Date</label>
+                                        <div class="custom-select">
+                                            <select id="date">
+                                                <option value="" disabled selected>Select your date</option>
+                                                <option value="">Date 1</option>
+                                                <option value="">Date 2</option>
+                                                <option value="">Date 3</option>
+                                            </select>
+                                        </div>
+                                </div>
+                                <div class="select">
+                                    <label for="time">Time</label>
+                                        <div class="custom-select">
+                                            <select id="time">
+                                                <option value="" disabled selected>Select your time</option>
+                                                <option value="">Time 1</option>
+                                                <option value="">Time 2</option>
+                                                <option value="">Time 3</option>
+                                            </select>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="option">
+                                <div class="radio-style">
+                                    <label for="">
+                                        <input class="radio-input" type="radio" name="Drop-Off" value="">
+                                        Drop-Off
+                                    </label>
+                                </div>
+                                <div class="selection-container">
+                                    <div class="select">
+                                        <label for="city">Locations</label>
+                                        <div class="custom-select">
+                                            <select id="city">
+                                                <option value="" disabled selected>Select your city</option>
+                                                <option value="">City 1</option>
+                                                <option value="">City 2</option>
+                                                <option value="">City 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="select">
+                                        <label for="date">Date</label>
+                                        <div class="custom-select">
+                                            <select id="date">
+                                                <option value="" disabled selected>Select your date</option>
+                                                <option value="">Date 1</option>
+                                                <option value="">Date 2</option>
+                                                <option value="">Date 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="select">
+                                        <label for="time">Time</label>
+                                        <div class="custom-select">
+                                            <select id="time">
+                                                <option value="" disabled selected>Select your time</option>
+                                                <option value="">Time 1</option>
+                                                <option value="">Time 2</option>
+                                                <option value="">Time 3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+                
+            
+            <div class="container-cars">
+                <div class="car">
+                        <div class="nom-car">
+                            <h3>Koenigsegg <br><samp>Sport</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img class="cars" src="images/car/Car1.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>90L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>2People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$99.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+        
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>Nissan GT-R <br><samp>Sport</samp></h3>
+                            <img src="images/heart.png" alt="">
+                        </div>
+                        <img  class="cars"  src="images/car/Car2.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>80L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>2People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$80.00/ <samp>day</samp> <br><samp>$100.00</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>Rolls-royce <br><samp>Sport</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img  class="cars"  src="images/car/Car3.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>70L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>4People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$96.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>All New Rush <br><samp>SUV</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car4.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>70L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>6People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$72.00/ <samp>day</samp> <br> <samp>$80.00</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>CR-V <br><samp>SUV</samp></h3>
+                            <img src="images/heart.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car5.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>80L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>6People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$80.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>All New Terios <br><samp>SUV</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car6.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>90L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manuel</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>6People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$74.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>MG ZX Exclusice <samp>hatchback</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car7.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>70L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Electric</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>4People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$76.00/ <samp>day</samp> <br><samp>$80.00</samp></h4>
+                            <button>Rent Now</button>   
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>New MGZS <br><samp>SUV</samp></h3>
+                            <img src="images/heart 1.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car8.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>80L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Manual</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>6People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$80.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+
+                    <div class="car">
+                        <div class="nom-car">
+                            <h3>MG ZX Excite <samp>Hatchback</samp></h3>
+                            <img src="images/heart.png" alt="">
+                        </div>
+                        <img  class="cars" src="images/car/Car9.png" alt="">
+                        <div class="info-car">
+                            <div class="detail-car">
+                                <img src="images/gas-station.png" alt="">
+                                <h5>90L</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/Car.png" alt="">
+                                <h5>Electric</h5>
+                            </div>
+                            <div class="detail-car">
+                                <img src="images/profile-2user.png" alt="">
+                                <h5>4People</h5>
+                            </div>
+                        </div>
+                        <div class="cost-car">
+                            <h4>$74.00/ <samp>day</samp></h4>
+                            <button>Rent Now</button>
+                        </div>
+                    </div>
+            </div>
+                  
+        </div>
+    </main>
+
+      
+<footer>
+    <div class="container-footer">
+        <div class="navbar-footer">
+            <div>
+                <h3>MORENT</h3>
+                <h5>Our vision is to provide convenience and help increase your sales business.</h5>
+            </div>
+            <div class="content-nav">
+                <div class="nav-footer">
+                    <h4>About</h4>
+                    <h5>How it works</h5>
+                    <h5>Featured</h5>
+                    <h5>Partnership</h5>
+                    <h5>Bussiness Relation</h5>
+                </div>
+                <div  class="nav-footer">
+                    <h4>Community</h4>
+                    <h5>Events</h5>
+                    <h5>Blog</h5>
+                    <h5>Podcast</h5>
+                    <h5>Invite a friend</h5>
+                </div>
+                <div  class="nav-footer">
+                    <h4>Socials</h4>
+                    <h5>Discord</h5>
+                    <h5>Instagram</h5>
+                    <h5>Twitter</h5>
+                    <h5>Facebook</h5>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h5>©2022 MORENT. All rights reserved</h5>
+            <div >
+                <h5>Privacy & Policy</h5>
+                 <h5>Terms & Condition</h5>
+            </div>
+        </div>
+      
+
+    </div>
+   
+
+</footer>
+    
+</body>
+</html>

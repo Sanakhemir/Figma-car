@@ -9,18 +9,36 @@
 </head>
 <body>
     <header class="container-navbar">
+
         <h1>MORENT</h1>
         <div class="search-container">
             <img src="images/navbar/search-normal.png" alt="Left" class="left-icon">
             <input type="text" placeholder="Search something here">
             <img src="images/navbar/filter.png" alt="Right" class="right-icon"> 
         </div>
-        <div class="nav-icons">
-            <img src="images/navbar/Like.png" alt="heart">
-            <img src="images/navbar/Notification.png" alt="notification">
-            <img src="images/navbar/Settings.png" alt="setting">
-            <img src="images/navbar/Profil.png" alt="Profil">
+        
+        <div class="nav-hamburger">
+            <div class="nav-icons">
+                <div class="nav-heart">
+                    <svg class="items-nav" id="navbar-heart-icon" fill="gray" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                    </svg>
+                    <!-- <img class="items-nav" src="images/heart.svg" alt="heart icon" class="heart-icon-navbar"> -->
+                    <span id="heart-counter" class="heart-badge">0</span> 
+                </div>
+                <img class="items-nav" src="images/notification.svg" alt="notification">
+                <img class="items-nav" src="images/setting-2.svg" alt="setting">
+                <img id="profil" src="images/navbar/Profil.png" alt="Profil">
+            </div>
+    
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+             </div>
         </div>
+    
+
     </header>
 
     <main class="container-main">
@@ -28,27 +46,27 @@
             <form class="container-aside">
                 <h4>TYPE</h4>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="Sport">
                     Sport <samp>(10)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="SUV">
                     SUV <samp>(12)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="MPV">
                     MPV <samp>(16)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="Sedan">
                     Sedan <samp>(20)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="Coupe">
                     Coupe <samp>(14)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
+                    <input type="checkbox" name="Type" value="Hatchback">
                     Hatchback <samp>(14)</samp>
                 </label>
             </form>
@@ -56,20 +74,20 @@
             <form class="container-aside">
                 <h4>CAPACITY</h4>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
-                    2Person <samp>(10)</samp>
+                    <input type="checkbox" name="Capacity" value="2">
+                    2 Person <samp>(10)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
-                    4Person<samp>(14)</samp>
+                    <input type="checkbox" name="Capacity" value="4">
+                    4 Person<samp>(14)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
-                    6Person <samp>(12)</samp>
+                    <input type="checkbox" name="Capacity" value="6">
+                    6 Person <samp>(12)</samp>
                 </label>
                 <label class="rounded-label">
-                    <input type="checkbox" name="" value="">
-                    8orMore <samp>(16)</samp>
+                    <input type="checkbox" name="Capacity" value="8">
+                    8 or More <samp>(16)</samp>
                 </label>
             </form>
         
@@ -80,9 +98,8 @@
         </section>  
 
         <div id="main">
-            <div >
                 <div class="container-options">
-                    <img src="images/Switch.png" alt="">
+                    <!-- <img src="images/Switch.png" alt=""> -->
                     <div class="selections">
                         <div class="option">
                             <div class="radio-style">
@@ -127,6 +144,8 @@
                                 </div>
                             </div>
                         </div>
+
+                        <img src="images/Switch.png" alt="">
                         
                         <div class="option">
                                 <div class="radio-style">
@@ -174,15 +193,22 @@
                     </div>
                     
                 </div>
-            </div>
+    
                 
             
-            <div class="container-cars">
-                <div class="car">
-                        <div class="nom-car">
-                            <h3>Koenigsegg <br><samp>Sport</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+            <div class="container-cars"> 
+                <div class="car" data-type="Sport" data-capacity="2">
+                        <div class="nom-car" >
+                            <div class="Nom">
+                                <h3>Koenigsegg</h3>
+                                <h4>Sport</h4>
+                            </div>
+                            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
+                        
                         <img class="cars" src="images/car/Car1.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -202,13 +228,22 @@
                             <h4>$99.00/ <samp>day</samp></h4>
                             <button>Rent Now</button>
                         </div>
-                    </div>
+                </div>
+
+            
         
-                    <div class="car">
+                    <div class="car" data-type="Sport" data-capacity="2">
                         <div class="nom-car">
-                            <h3>Nissan GT-R <br><samp>Sport</samp></h3>
-                            <img src="images/heart.png" alt="">
+                            <div>
+                                <h3>Nissan GT-R</h3>
+                                <h4>Sport</h4>
+                            </div>
+                            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart2.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars"  src="images/car/Car2.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -225,16 +260,23 @@
                             </div>
                         </div>
                         <div class="cost-car">
-                            <h4>$80.00/ <samp>day</samp> <br><samp>$100.00</samp></h4>
+                            <h4>$80.00/ <samp>day</samp> <br><samp></samp>$100.00</h4>
                             <button>Rent Now</button>
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>Rolls-royce <br><samp>Sport</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+                            <div class="Nom">
+                                <h3>Rolls-royce</h3>
+                                <h4>Sport</h4>
+                            </div>
+                            <svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars"  src="images/car/Car3.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -256,11 +298,18 @@
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>All New Rush <br><samp>SUV</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+                            <div class="Nom">
+                                <h3>All New Rush</h3>
+                                <h4>SUV</h4>
+                            </div>
+                            <svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars" src="images/car/Car4.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -277,16 +326,23 @@
                             </div>
                         </div>
                         <div class="cost-car">
-                            <h4>$72.00/ <samp>day</samp> <br> <samp>$80.00</samp></h4>
+                            <h4>$72.00/ <samp>day</samp> <br>$80.00</h4>
                             <button>Rent Now</button>
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>CR-V <br><samp>SUV</samp></h3>
-                            <img src="images/heart.png" alt="">
+                            <div class="Nom">
+                                <h3>CR-V</h3>
+                                <h4>SUV</h4>
+                            </div>
+                            <svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart2.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars" src="images/car/Car5.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -308,11 +364,18 @@
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>All New Terios <br><samp>SUV</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+                            <div class="Nom">
+                                <h3>All New Terios</h3>
+                                <h4>SUV</h4>
+                            </div>
+                            <svg  class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars" src="images/car/Car6.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -334,11 +397,18 @@
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>MG ZX Exclusice <samp>hatchback</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+                            <div class="Nom">
+                                <h3>MG ZX Exclusice</h3>
+                                <h4>hatchback</h4>
+                            </div>
+                            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars" src="images/car/Car7.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -358,12 +428,18 @@
                             <h4>$76.00/ <samp>day</samp> <br><samp>$80.00</samp></h4>
                             <button>Rent Now</button>   
                         </div>
-                    </div>
+                    </div> 
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>New MGZS <br><samp>SUV</samp></h3>
-                            <img src="images/heart 1.png" alt="">
+                            <div class="Nom">
+                                <h3>New MGZS</h3>
+                                <h4>SUV</h4>
+                            </div>
+                            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart1.svg" alt="heart icon"> -->
                         </div>
                         <img  class="cars" src="images/car/Car8.png" alt="">
                         <div class="info-car">
@@ -386,11 +462,18 @@
                         </div>
                     </div>
 
-                    <div class="car">
+                    <div class="car" data-type="" data-capacity="">
                         <div class="nom-car">
-                            <h3>MG ZX Excite <samp>Hatchback</samp></h3>
-                            <img src="images/heart.png" alt="">
+                            <div class="Nom">
+                                <h3>MG ZX Excite</h3>
+                                <h4>Hatchback</h4>
+                            </div>
+                            <svg class="heart-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="30" height="30">
+                                <path fill="gray" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                            </svg>
+                            <!-- <img id="heart-icon" class="heart-icon" src="images/heart2.svg" alt="heart icon"> -->
                         </div>
+
                         <img  class="cars" src="images/car/Car9.png" alt="">
                         <div class="info-car">
                             <div class="detail-car">
@@ -410,7 +493,7 @@
                             <h4>$74.00/ <samp>day</samp></h4>
                             <button>Rent Now</button>
                         </div>
-                    </div>
+                    </div> 
             </div>
                   
         </div>
@@ -420,40 +503,45 @@
 <footer>
     <div class="container-footer">
         <div class="navbar-footer">
-            <div>
+            <div class="logo-footer">
                 <h3>MORENT</h3>
-                <h5>Our vision is to provide convenience and help increase your sales business.</h5>
+                <p>Our vision is to provide convenience and help increase your sales business.</p>
             </div>
             <div class="content-nav">
-                <div class="nav-footer">
+                 <Li class="nav-footer">
                     <h4>About</h4>
-                    <h5>How it works</h5>
-                    <h5>Featured</h5>
-                    <h5>Partnership</h5>
-                    <h5>Bussiness Relation</h5>
-                </div>
-                <div  class="nav-footer">
-                    <h4>Community</h4>
-                    <h5>Events</h5>
-                    <h5>Blog</h5>
-                    <h5>Podcast</h5>
-                    <h5>Invite a friend</h5>
-                </div>
-                <div  class="nav-footer">
-                    <h4>Socials</h4>
-                    <h5>Discord</h5>
-                    <h5>Instagram</h5>
-                    <h5>Twitter</h5>
-                    <h5>Facebook</h5>
-                </div>
+                    <p>How it works</p>
+                    <p>Featured</p>
+                    <p>Partnership</p>
+                    <p>Bussiness Relation</p>
+                </Li>
+                
+                
+                 <Li class="nav-footer">
+                     <h4>Community</h4>
+                     <p>Events</p>
+                     <p>Blog</p>
+                     <p>Podcast</p>
+                     <p>Invite a friend</p>
+                 </Li>
+                
+                
+                 <Li class="nav-footer">
+                     <h4>Socials</h4>
+                     <p>Discord</p>
+                     <p>Instagram</p>
+                     <p>Twitter</p>
+                     <p>Facebook</p>
+                </Li>
+                
             </div>
         </div>
         <hr>
-        <div>
+        <div class="footer-footer">
             <h5>©2022 MORENT. All rights reserved</h5>
-            <div >
+            <div class="privacy">
                 <h5>Privacy & Policy</h5>
-                 <h5>Terms & Condition</h5>
+                <h5>Terms & Condition</h5>
             </div>
         </div>
       
@@ -461,7 +549,7 @@
     </div>
    
 
-</footer>
-    
+</footer> 
+   <script src="app.js"></script>   
 </body>
 </html>
